@@ -4,19 +4,19 @@
   - deploy
 
  jobs:
-   build:
-    stage: build
-    script:
+    build:
+     stage: build
+     script:
       - echo "Building the application..."
 
   # Test job
-   test:
+ test:
     stage: test
     script:
       - echo "Running tests..."
 
   # Deploy job
-   deploy:
+ deploy:
      stage: deploy
      script:
     - echo "Deploying the application..."
